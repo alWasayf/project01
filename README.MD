@@ -9,13 +9,13 @@
 ### Project
 The project for week one is to implement a simple game of hangman, 
 
-Hangman is a game where you give the user the number of charactors and then allow the user to guess a letter, 
+Hangman is a game where you give the user the number of characters and then allow the user to guess a letter, 
 
 - Each incorrect guess will contribute to form the hanged man, once the user guess 5 times incorrectly then the hang man is completed and the user loses, 
 
-- If the user guesses correctly you fill the word with that charactor and allow the user to guess again
+- If the user guesses correctly you fill the word with that character and allow the user to guess again
 
-- Finally if the user guesses the number twice don't progress the hangedman and just let the user know why it did not progress
+- Finally if the user guesses the a character twice don't progress the hangedman and just let the user know why it did not progress
 
 and that's it
 
