@@ -70,7 +70,7 @@ console.log(answers.join(' '));
 }
 
 
-async function startGame(letter,randomly) {
+async function startGame(randomly) {
     let counter=0;
     while (counter<5&&answers.includes(' - ')) {
      let GusseInput = await question('Gusse the letters of word >_< : ');
@@ -84,20 +84,18 @@ async function startGame(letter,randomly) {
      console.log(answers.join(" "));
 
  }else{
-     console.log(game[counter].join())
+     counter++;
+     console.log(game[counter])
     console.log('wrong word try again');
-    counter++;
+    
  }
  }else{
      console.log("-_- Please we trying to bilde game for you type any words -_-");
-process.exit();
- }
+     process.exit();
+    }
 
-counter<5?console.log('>v< we have winner here >v<'):console.log('&_& think hard if you close &_&')
-
- counter++
  }   
-
+counter<5?console.log('>v< we have winner here >v<'):console.log('&_& think hard if you close &_&')
 }
 
 
@@ -113,10 +111,11 @@ async function play() {
     //function display the shpe of letters - - - - -  "done "
 console.log(game[0]);
 let num= await question('CHOOSE TYPE OF GUSSES *_* : 0-LANGUAGES 1-FOOD 2-PROGRAMMING LANGUAGE');
-let   randomly=randomWord(typesOfWords[parseInt(num)]);
+ let   randomly=randomWord(typesOfWords[parseInt(num)]);
+console.log('ran ');
 randomtypesOfWords(randomly);
 //need to change the shape of - to numbers of letters ..'done'
 await startGame(randomly);
 readline.close();
 }
-play();
+ play();
